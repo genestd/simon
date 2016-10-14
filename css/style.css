@@ -1,3 +1,8 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body{
   background-image: url(https://www.transparenttextures.com/patterns/hexabump.png);
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -155,6 +160,9 @@ body{
 .btnStrict{
   background-color: #000000;
   border-color: #cccccc;
+}
+.btnStart{
+  background-color: #d9534f;
 }
 .start{
   display: block;
