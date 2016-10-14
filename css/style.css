@@ -1,0 +1,328 @@
+body{
+  background-image: url(https://www.transparenttextures.com/patterns/hexabump.png);
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-box-align: center;
+  -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pointer{
+  cursor: pointer;
+}
+.simon{
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: white;
+  position:relative;
+}
+.green{
+  background-color: rgba(67,212,83,1);
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  border-color: black;
+  border-style: solid;
+  border-width: 16px 8px 8px 16px;
+}
+.red{
+  background-color: rgba(255,0,0,1);
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  border-radius: 0 100% 0 0;
+  border-color: black;
+  border-style: solid;
+  border-width: 16px 16px 8px 8px;
+}
+.yellow{
+  background-color: rgba(255,247,50,1);
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 0;
+  border-radius: 0 0 0 100%;
+  border-color: black;
+  border-style: solid;
+  border-width: 8px 8px 16px 16px;
+}
+.blue{
+  background-color: rgba(0,163,236,1);
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  border-radius: 0 0 100% 0;
+  border-color: black;
+  border-style: solid;
+  border-width: 8px 16px 16px 8px;
+}
+.center{
+  background: rgb(204,204,204); /* Old browsers */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(204,204,204,1) 46%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(204,204,204,1) 46%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+  font-family: Orbitron;
+  font-size: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-box-direction: normal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border-width: 16px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  left:25%;
+  top: 25%;
+}
+
+.name{
+  color: black;
+  margin-top: 20%;
+  text-align: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.buttons{
+  color: white;
+  font-size: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25%;
+}
+.btn{
+  display: block;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.btn:focus, .btn:active{
+  outline: none;
+}
+.btnStrict{
+  background-color: #000000;
+  border-color: #cccccc;
+}
+.start{
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+.longest{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  background-color: black;
+  color:#d9534f;
+  border: 1px solid #d9534f;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding-top: 4px;
+  height: 30px;
+  width: 50px;
+}
+.wrapper{
+  display: block;
+  text-align: center;
+}
+.power{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin-top: -50px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #d9534f;
+  border-radius: 5px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  -moz-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 3px;
+  bottom: 3px;
+  background-color: black;
+  border-radius: 5px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  -moz-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #d9534f;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -o-transform: translateX(26px);
+  -ms-transform: translatex(26px);
+  -moz-transform: translateX(26px);
+  transform: translateX(26px);
+}
+@media only screen and (max-width : 499px) and (min-width : 400px) {
+  .simon{
+    width: 400px;
+    height: 400px;
+  }
+  .center{
+    font-size: 36px;
+  }
+  .switch{
+    width: 45px;
+    height: 26px;
+  }
+  .slider{
+    width: 45px;
+  }
+  .slider:before {
+    width: 22px;
+    height: 22px;
+    left: 2px;
+    bottom: 2px;
+
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -o-transform: translateX(19px);
+    -moz-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+  }
+}
+@media only screen and (max-width : 399px) and (min-width : 0px){
+  .simon{
+    width: 320px;
+    height: 320px;
+  }
+  .center{
+    font-size: 32px;
+  }
+  .longest{
+    height: 25px;
+    width: 38px;
+    font-size: 12px;
+  }
+  .power{
+    font-size: 10px;
+    margin-top: -40px;
+  }
+  .btnStart, .btnStrict{
+    margin: 5px;
+  }
+  .switch{
+    width: 30px;
+    height: 16px;
+  }
+  .slider{
+    width: 30px;
+  }
+  .slider:before {
+    width: 16px;
+    height: 14px;
+    left: 1px;
+    bottom: 1px;
+
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -ms-transform: translate(12px);
+    -o-transform: translate(12px);
+    transform: translateX(12px);
+  }
+}
