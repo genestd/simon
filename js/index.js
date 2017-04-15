@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     if (sSoundUnlocked == false){
       /* Set up the audio processing */
-      context = new webkitAudioContext();
+      context = new webkitAudioContext() || new AudioContext();
       redGain = context.createGain();
       greenGain = context.createGain();
       yellowGain = context.createGain();
@@ -92,7 +92,7 @@ $(document).ready(function(){
       sQueue.push( simonNext() );
       simonGo();
     }
-    
+
   });
 
   $("#btnStrict").on("click", function(){
