@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     if (sSoundUnlocked == false){
       /* Set up the audio processing */
-      context = new webkitAudioContext() || new AudioContext();
+      context = new AudioContext() || new webkitAudioContext();
       redGain = context.createGain();
       greenGain = context.createGain();
       yellowGain = context.createGain();
